@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Student Management</h1>
+  <div class="container">
+    <div class="col-md-4">
+  <form id="userForm">
+    <div class="form-group">
+      <label>Name</label>
+    <input type="text" id="name" placeholder="Name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Class</label>
+    <input type="text" id="class" placeholder="Class" class="form-control">
+  </div>
+  <div class="form-group">
+
+    <label>Marks</label>
+    <input type="text" id="marks" class="form-control" required />
+</div>
+<div class="form-group">
+
+    <label>College Name</label>
+    <input type="text" id="collegename" class="form-control" required />
+</div>
+<div class="form-group">
+
+    <label>City </label>
+    <input type="text" id="city" class="form-control" required />
+</div>
+    <button type="submit">Add Student</button>
+   
+  </form>
+</div>
+</div>
+
+  <table id="userTable" class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Marks</th>
+        <th>CollegeName</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <script src="Student.js"></script>
+</body>
+</html>
